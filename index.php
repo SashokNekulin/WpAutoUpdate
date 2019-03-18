@@ -1,11 +1,11 @@
 <?php
-use SashokNekulin\WpAutoUpdate ;
+
 require_once 'vendor/autoload.php';
 /**
  * Plugin 
  */
 
-$plugin = new PluginUpdate( __FILE__ );
+$plugin = new SashokNekulin\WpAutoUpdate\PluginUpdate( __FILE__ );
 $plugin->set_username( 'SashokNekulin' );
 $plugin->set_repository( 'tf-tag' );
 /*
@@ -19,7 +19,7 @@ $plugin->initialize();
  * Template
  */
 
-$theme = new ThemeUpdate( __FILE__ );
+$theme = new SashokNekulin\WpAutoUpdate\ThemeUpdate( __FILE__ );
 $theme->set_username( 'SashokNekulin' );
 $theme->set_repository( 'tf-tag' );
 /*
